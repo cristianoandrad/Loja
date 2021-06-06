@@ -3,3 +3,14 @@ C:\Users\Suporte\source\repos\Loja\Loja\obj\Debug\Loja.MDIParent1.resources
 C:\Users\Suporte\source\repos\Loja\Loja\obj\Debug\Loja.Properties.Resources.resources
 C:\Users\Suporte\source\repos\Loja\Loja\obj\Debug\Loja.UI.csproj.GenerateResource.cache
 C:\Users\Suporte\source\repos\Loja\Loja\obj\Debug\Loja.UI.csproj.CoreCompileInputs.cache
+C:\Users\Suporte\source\repos\Loja\Loja\bin\Debug\Loja.exe.config
+C:\Users\Suporte\source\repos\Loja\Loja\bin\Debug\Loja.exe
+C:\Users\Suporte\source\repos\Loja\Loja\bin\Debug\Loja.pdb
+C:\Users\Suporte\source\repos\Loja\Loja\bin\Debug\Loja.BLL.dll
+C:\Users\Suporte\source\repos\Loja\Loja\bin\Debug\Loja.DTO.dll
+C:\Users\Suporte\source\repos\Loja\Loja\bin\Debug\Loja.BLL.pdb
+C:\Users\Suporte\source\repos\Loja\Loja\bin\Debug\Loja.DTO.pdb
+C:\Users\Suporte\source\repos\Loja\Loja\obj\Debug\Loja.UI.csproj.CopyComplete
+C:\Users\Suporte\source\repos\Loja\Loja\obj\Debug\Loja.exe
+C:\Users\Suporte\source\repos\Loja\Loja\obj\Debug\Loja.pdb
+C:\Users\Suporte\source\repos\Loja\Loja\obj\Debug\Loja.Cadastro_usuario.resources

@@ -1,0 +1,2 @@
+C:\Users\Suporte\source\repos\Loja\Loja.DAL\obj\Debug\Loja.DAL.csprojAssemblyReference.cache
+C:\Users\Suporte\source\repos\Loja\Loja.DAL\obj\Debug\Loja.DAL.csproj.CoreCompileInputs.cache

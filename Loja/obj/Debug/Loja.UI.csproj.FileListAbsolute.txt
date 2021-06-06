@@ -1,0 +1,5 @@
+C:\Users\Suporte\source\repos\Loja\Loja\obj\Debug\Loja.UI.csprojAssemblyReference.cache
+C:\Users\Suporte\source\repos\Loja\Loja\obj\Debug\Loja.MDIParent1.resources
+C:\Users\Suporte\source\repos\Loja\Loja\obj\Debug\Loja.Properties.Resources.resources
+C:\Users\Suporte\source\repos\Loja\Loja\obj\Debug\Loja.UI.csproj.GenerateResource.cache
+C:\Users\Suporte\source\repos\Loja\Loja\obj\Debug\Loja.UI.csproj.CoreCompileInputs.cache

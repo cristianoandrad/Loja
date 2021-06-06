@@ -1,0 +1,6 @@
+C:\Users\Suporte\source\repos\Loja\Loja.DTO\bin\Debug\Loja.DTO.dll
+C:\Users\Suporte\source\repos\Loja\Loja.DTO\bin\Debug\Loja.DTO.pdb
+C:\Users\Suporte\source\repos\Loja\Loja.DTO\obj\Debug\Loja.DTO.csprojAssemblyReference.cache
+C:\Users\Suporte\source\repos\Loja\Loja.DTO\obj\Debug\Loja.DTO.csproj.CoreCompileInputs.cache
+C:\Users\Suporte\source\repos\Loja\Loja.DTO\obj\Debug\Loja.DTO.dll
+C:\Users\Suporte\source\repos\Loja\Loja.DTO\obj\Debug\Loja.DTO.pdb

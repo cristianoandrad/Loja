@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Loja.DTO;
+using Loja.BLL;
 
 namespace Loja
 {
@@ -15,6 +17,11 @@ namespace Loja
         public Cadastro_usuario()
         {
             InitializeComponent();
+        }
+
+        private void Cadastro_usuario_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

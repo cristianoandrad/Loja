@@ -12,7 +12,7 @@ namespace Loja.DTO
     * Esta camada não faz referência a ninguém
     */
 
-    public class usuario_DTO
+    public class Usuario_DTO
     {
         public int cod_usuario { get; set; }
         public string nome { get; set; }

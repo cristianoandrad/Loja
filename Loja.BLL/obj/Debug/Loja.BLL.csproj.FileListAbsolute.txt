@@ -9,3 +9,4 @@ C:\Users\Suporte\source\repos\Loja\Loja.BLL\obj\Debug\Loja.BLL.csprojAssemblyRef
 C:\Users\Suporte\source\repos\Loja\Loja.BLL\obj\Debug\Loja.BLL.csproj.CopyComplete
 C:\Users\Suporte\source\repos\Loja\Loja.BLL\obj\Debug\Loja.BLL.dll
 C:\Users\Suporte\source\repos\Loja\Loja.BLL\obj\Debug\Loja.BLL.pdb
+C:\Users\Suporte\source\repos\Loja\Loja.BLL\bin\Debug\Loja.DAL.dll.config

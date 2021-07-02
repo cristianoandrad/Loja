@@ -7,3 +7,4 @@ C:\Users\Suporte\source\repos\Loja\Loja.DAL\bin\Debug\Loja.DTO.pdb
 C:\Users\Suporte\source\repos\Loja\Loja.DAL\obj\Debug\Loja.DAL.csproj.CopyComplete
 C:\Users\Suporte\source\repos\Loja\Loja.DAL\obj\Debug\Loja.DAL.dll
 C:\Users\Suporte\source\repos\Loja\Loja.DAL\obj\Debug\Loja.DAL.pdb
+C:\Users\Suporte\source\repos\Loja\Loja.DAL\bin\Debug\Loja.DAL.dll.config

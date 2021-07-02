@@ -16,5 +16,24 @@ namespace Loja.BLL
         */
     public class UsuarioBLL
     {
+        /*
+         * Método cargaUsuario, retorna uma lista de objetos usuariosDTO
+         * compostos por vários atributos, vai até o BD e busca todos os usuários
+         * Usamos o try cacth caso dê algum erro, retorna a chamada para a view
+         * executa o método cargaUsuario da DAL
+         */
+
+        public IList<Usuario_DTO> cargaUsuario()
+        {
+            try
+            {
+                return new UsuarioDAL().cargaUsuario();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
     }
 }

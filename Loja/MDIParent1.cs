@@ -41,5 +41,15 @@ namespace Loja
             childForm.MdiParent = this;
             childForm.Show();
         }
+
+        private void menuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -56,6 +56,7 @@
             this.menuStrip.Size = new System.Drawing.Size(632, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
+            this.menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip_ItemClicked);
             // 
             // Cadastro
             // 
@@ -71,6 +72,7 @@
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
             this.produtosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.produtosToolStripMenuItem.Text = "Produtos";
+            this.produtosToolStripMenuItem.Click += new System.EventHandler(this.produtosToolStripMenuItem_Click);
             // 
             // usuáriosToolStripMenuItem
             // 

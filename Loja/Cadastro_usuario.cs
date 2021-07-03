@@ -47,6 +47,31 @@ namespace Loja
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            /*Linha atual que estiver selecionada aparecerá nos campos (textbox)
+            * acima do dataGrid*/
+            int sel = dataGridView1.CurrentRow.Index;
+            /*Valor de cada datagrid será enviado ao seu respectivo texbox*/
+            txtNome.Text = Convert.ToString(dataGridView1["nome", sel].Value);
+            txtLogin.Text = Convert.ToString(dataGridView1["login", sel].Value);
+            txtEmail.Text = Convert.ToString(dataGridView1["email", sel].Value);
+            txtSenha.Text = Convert.ToString(dataGridView1["senha", sel].Value);
+            txtCadastro.Text = Convert.ToString(dataGridView1["cadastro", sel].Value);
+            /*Condição se a situação for igual a "A" então o combobox ficará
+            * Ativo senao "Inativo" */
+            if (Convert.ToString(dataGridView1["situacao", sel].Value) == "A")
+            {
+                cboSituacao.Text = "Ativo";
+            }
+            else
+            {
+                cboSituacao.Text = "Inativo";
+                cboPerfil.Text = Convert.ToString(dataGridView1["perfil", sel].Value);
+            }
+
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

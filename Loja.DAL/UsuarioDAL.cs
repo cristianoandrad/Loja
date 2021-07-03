@@ -32,41 +32,38 @@ namespace Loja.DAL
                 /*Conexão com o banco de dados
                  * Seleciona todos os dados da tabela tb_usuarios
                  */
-                SqlConnection con = new SqlConnection();
-                con.ConnectionString = Properties.Settings.Default.CST;
-                SqlCommand cm = new SqlCommand();
-                cm.CommandType = System.Data.CommandType.Text;
-                cm.CommandText = "selec * from tb_usuarios";
-                cm.Connection = con;
+                SqlConnection CON = new SqlConnection();
+                CON.ConnectionString = Properties.Settings.Default.CST;
+                SqlCommand CM = new SqlCommand();
+                CM.CommandType = System.Data.CommandType.Text;
+                CM.CommandText = "SELECT*FROM tb_usuarios";
+                CM.Connection = CON;
 
-                SqlDataReader er;
-                IList<Usuario_DTO> listUsuariosDTO = new List<Usuario_DTO>();
+                SqlDataReader ER;
+                IList<Usuario_DTO> listUsuarioDTO = new List<Usuario_DTO>();
 
-                con.Open();
-                er = cm.ExecuteReader();
-                if (er.HasRows)
+                CON.Open();
+                ER = CM.ExecuteReader();
+                if (ER.HasRows)
                 {
-                    while (er.Read())
+                    while (ER.Read())
                     {
                         Usuario_DTO usu = new Usuario_DTO();
-
-                        /* Nome do objeto criado na DTO
-                         * Cada objeto criado é enviado para uma lista, possibilitando
-                         * que no final voce tenha uma lista com vários usuários
-                         */
-                        usu.cod_usuario = Convert.ToInt32(er["cod_usuario"]);
-                        usu.nome = Convert.ToString(er["nome"]);
-                        usu.login = Convert.ToString(er["login"]);
-                        usu.email = Convert.ToString(er["email"]);
-                        usu.senha = Convert.ToString(er["senha"]);
-                        usu.cadastro = Convert.ToDateTime(er["cadastro"]);
-                        usu.situacao = Convert.ToString(er["situacao"]);
-                        usu.perfil = Convert.ToInt32(er["perfil"]);
-                        listUsuariosDTO.Add(usu);
+                        /*nome dos objetos criados na DTO
+                        * Cada objeto criado é enviado para a lista, possibilitando
+                       * que no final vc tenha uma lista com vários usuários */
+                        usu.cod_usuario = Convert.ToInt32(ER["cod_usuario"]);
+                        usu.perfil = Convert.ToInt32(ER["perfil"]);
+                        usu.cadastro = Convert.ToDateTime(ER["cadastro"]);
+                        usu.nome = Convert.ToString(ER["nome"]);
+                        usu.email = Convert.ToString(ER["email"]);
+                        usu.login = Convert.ToString(ER["cadastro"]);
+                        usu.senha = Convert.ToString(ER["senha"]);
+                        usu.situacao = Convert.ToString(ER["situacao"]);
+                        listUsuarioDTO.Add(usu);
                     }
-
                 }
-                return listUsuariosDTO;
+                return listUsuarioDTO;
 
 
 

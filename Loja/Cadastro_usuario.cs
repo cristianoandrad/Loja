@@ -62,6 +62,7 @@ namespace Loja
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+<<<<<<< HEAD
             /*Linha atual que estiver selecionada aparecerá nos campos (textbox)
             * acima do dataGrid*/
             int sel = dataGridView1.CurrentRow.Index;
@@ -102,6 +103,8 @@ namespace Loja
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+=======
+>>>>>>> parent of d3714c9 (continua)
 
         }
 

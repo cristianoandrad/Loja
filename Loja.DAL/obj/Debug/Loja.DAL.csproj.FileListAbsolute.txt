@@ -1,4 +1,3 @@
-C:\Users\Suporte\source\repos\Loja\Loja.DAL\obj\Debug\Loja.DAL.csprojAssemblyReference.cache
 C:\Users\Suporte\source\repos\Loja\Loja.DAL\obj\Debug\Loja.DAL.csproj.CoreCompileInputs.cache
 C:\Users\Suporte\source\repos\Loja\Loja.DAL\bin\Debug\Loja.DAL.dll
 C:\Users\Suporte\source\repos\Loja\Loja.DAL\bin\Debug\Loja.DAL.pdb
@@ -8,3 +7,4 @@ C:\Users\Suporte\source\repos\Loja\Loja.DAL\obj\Debug\Loja.DAL.csproj.CopyComple
 C:\Users\Suporte\source\repos\Loja\Loja.DAL\obj\Debug\Loja.DAL.dll
 C:\Users\Suporte\source\repos\Loja\Loja.DAL\obj\Debug\Loja.DAL.pdb
 C:\Users\Suporte\source\repos\Loja\Loja.DAL\bin\Debug\Loja.DAL.dll.config
+C:\Users\Suporte\source\repos\Loja\Loja.DAL\obj\Debug\Loja.DAL.csproj.AssemblyReference.cache

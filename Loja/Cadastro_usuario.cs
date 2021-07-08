@@ -23,13 +23,28 @@ namespace Loja
      */
     public partial class Cadastro_usuario : Form
     {
+        string modo = "";
+
         public Cadastro_usuario()
         {
             InitializeComponent();
         }
 
+
+
         private void Cadastro_usuario_Load(object sender, EventArgs e)
+        /* Método carregaGrid.
+        * Para atualizar os dados do Grid.
+        * Basta chamar o método. */
         {
+            carregaGrid();
+        }
+        private void carregaGrid()
+
+
+        {
+
+
             try
             {
                 IList<Usuario_DTO> listUsuario_DTO = new List<Usuario_DTO>();
@@ -65,7 +80,22 @@ namespace Loja
             else
             {
                 cboSituacao.Text = "Inativo";
-                cboPerfil.Text = Convert.ToString(dataGridView1["perfil", sel].Value);
+                //cboPerfil.Text = Convert.ToString(dataGridView1["perfil", sel].Value);
+            }
+
+            switch(Convert.ToString(dataGridView1["perfil", sel].Value))
+            {
+                /*Caso seja 1, será escolhido Administrados, caso seja 2, operador
+                * e caso 3, Gerencial*/
+                case "1":
+                    cboPerfil.Text = "Administrador";
+                    break;
+                case "2":
+                    cboPerfil.Text = "Operador";
+                    break;
+                case "3":
+                    cboPerfil.Text = "Gerencial";
+                    break;
             }
 
         }
@@ -73,6 +103,96 @@ namespace Loja
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+            /*Chamando Método Limpar Campos que foi criado*/
+            limpar_campos();
+
+            /*inserindo data atual automaticamente no txtCadastro*/
+            txtCadastro.Text = Convert.ToString(System.DateTime.Now);
+
+
+            /*após clicar no botão NOVO, modo passa a ser novo (incluindo um registro)*/
+            modo = "novo";
+
+        }
+
+        /*Criando Método Limpar Campos, para que todas as vezes em
+         * que for necessário limpar nao será necessário repetir o
+         * código, apenas chamar o método*/
+        private void limpar_campos()
+        {
+            txtNome.Text = "";
+            txtLogin.Text = "";
+            txtEmail.Text = "";
+            txtSenha.Text = "";
+            txtCadastro.Text = "";
+            cboPerfil.Text = "";
+            cboSituacao.Text = "";
+        }
+
+        private void btnConfirmar_Click(object sender, EventArgs e)
+        {
+            if (modo == "novo")
+            {
+                /*Tratamento de Erros, exibe msg*/
+                try
+                {
+                    /*Objeto USU*/
+                    Usuario_DTO USU = new Usuario_DTO();
+                    USU.nome = txtNome.Text;
+                    USU.login = txtLogin.Text;
+                    USU.email = txtEmail.Text;
+                    USU.cadastro = System.DateTime.Now;
+                    USU.senha = txtSenha.Text;
+                    if (cboSituacao.Text == "Ativo")
+                    {
+                        USU.situacao = "A";
+                    }
+                    else
+                    {
+                        USU.situacao = "I";
+                    }
+                    switch (cboPerfil.Text)
+                    {
+                        case "Administrador":
+                            USU.perfil = 1;
+                            break;
+                        case "Operador":
+                            USU.perfil = 2;
+                            break;
+                        case "Gerencial":
+                            USU.perfil = 3;
+                            break;
+                    }
+
+
+                    /*Método insere usuário na classe UsuarioBLL*/
+                    int x = new UsuarioBLL().insereUsuario(USU);
+                    if (x > 0)
+                    {
+                        MessageBox.Show("Gravado com Sucesso!");
+                    }
+
+                    /*Recarrega o Grid */
+                    carregaGrid();
+
+
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro inesperado" + ex.Message);
+                }
+            }
+            modo = "";
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            modo = "alterar";
         }
     }
 }

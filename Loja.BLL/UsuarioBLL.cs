@@ -16,24 +16,58 @@ namespace Loja.BLL
         */
     public class UsuarioBLL
     {
-        /*
-         * Método cargaUsuario, retorna uma lista de objetos usuariosDTO
-         * compostos por vários atributos, vai até o BD e busca todos os usuários
-         * Usamos o try cacth caso dê algum erro, retorna a chamada para a view
-         * executa o método cargaUsuario da DAL
-         */
-
-        public IList<Usuario_DTO> cargaUsuario()
+        public class UsuarioBLL
         {
-            try
+            /*Método cargaUsuario, retorna uma Lista de objetos usuario DTO
+            (composto por vários atributos), vai até o BD e
+            buscar todos os usuários.
+            Usamos o try e Catch caso de algum erro, retorna para a camada view
+            Executar o método cargaUsuario (será criado na DAL)
+            */
+            public IList<Usuario_DTO> cargaUsuario()
             {
-                return new UsuarioDAL().cargaUsuario();
+                try
+                {
+                    return new UsuarioDAL().cargaUsuario();
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
             }
-            catch (Exception ex)
+            public int insereUsuario(Usuario_DTO USU)
             {
-                throw ex;
+                /*Insere usuario será criado na DAL*/
+                try
+                {
+                    return new UsuarioDAL().insereUsuario(USU);
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
             }
-
+            public int alteraUsuario(Usuario_DTO USU)
+            {
+                try
+                {
+                    return new UsuarioDAL().alteraUsuario(USU);
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+            public int excluiUsuario(Usuario_DTO USU)
+            {
+                try
+                {
+                    return new UsuarioDAL().excluiUsuario(USU);
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
         }
-    }
 }

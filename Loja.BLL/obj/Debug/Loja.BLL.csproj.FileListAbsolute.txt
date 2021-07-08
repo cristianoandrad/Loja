@@ -5,8 +5,8 @@ C:\Users\Suporte\source\repos\Loja\Loja.BLL\bin\Debug\Loja.DAL.dll
 C:\Users\Suporte\source\repos\Loja\Loja.BLL\bin\Debug\Loja.DTO.dll
 C:\Users\Suporte\source\repos\Loja\Loja.BLL\bin\Debug\Loja.DAL.pdb
 C:\Users\Suporte\source\repos\Loja\Loja.BLL\bin\Debug\Loja.DTO.pdb
-C:\Users\Suporte\source\repos\Loja\Loja.BLL\obj\Debug\Loja.BLL.csprojAssemblyReference.cache
 C:\Users\Suporte\source\repos\Loja\Loja.BLL\obj\Debug\Loja.BLL.csproj.CopyComplete
 C:\Users\Suporte\source\repos\Loja\Loja.BLL\obj\Debug\Loja.BLL.dll
 C:\Users\Suporte\source\repos\Loja\Loja.BLL\obj\Debug\Loja.BLL.pdb
 C:\Users\Suporte\source\repos\Loja\Loja.BLL\bin\Debug\Loja.DAL.dll.config
+C:\Users\Suporte\source\repos\Loja\Loja.BLL\obj\Debug\Loja.BLL.csproj.AssemblyReference.cache

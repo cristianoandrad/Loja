@@ -16,8 +16,8 @@ namespace Loja.BLL
         */
     public class UsuarioBLL
     {
-        public class UsuarioBLL
-        {
+        
+        
             /*Método cargaUsuario, retorna uma Lista de objetos usuario DTO
             (composto por vários atributos), vai até o BD e
             buscar todos os usuários.
@@ -70,4 +70,6 @@ namespace Loja.BLL
                 }
             }
         }
+    
+     
 }

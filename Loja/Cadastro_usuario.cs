@@ -196,5 +196,26 @@ namespace Loja
         {
             modo = "alterar";
         }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            txtCadastro.Text = "";
+            txtEmail.Text = "";
+            txtLogin.Text = "";
+            txtNome.Text = "";
+            txtSenha.Text = "";
+            cboPerfil.Text = "";
+            cboSituacao.Text = "";
+        }
+
+        private void btnDeletar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
